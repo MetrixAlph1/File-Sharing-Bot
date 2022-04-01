@@ -7,8 +7,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
-    data = query.data
-            disable_web_page_preview = True,
+    data = query.data,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
